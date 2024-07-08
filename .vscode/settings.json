@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/b960c21c-5a29-4dfe-85bd-ee4c447c5030/resourceGroups/RG-ALIENS/providers/Microsoft.Web/sites/experience-aliens",
+    "appService.deploySubpath": "."
+}

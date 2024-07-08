@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    // Include Bootstrap CSS from a CDN
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+    // Include custom CSS
+    link(rel='stylesheet', href='/styles.css')
+    // Include jQuery
+    script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+  body
+    h1 Enter Password
+    form(class="password-form")
+      div.form-group
+        label(for='part1') Smelling Tubes
+        input(type="text" name="part1" maxlength="6" required class="form-control alien-input")
+        button(type="button" class="btn btn-secondary check-button" data-part="1") Check
+        span#part1-status
+      div.form-group
+        label(for='part2') Toxic Powder
+        input(type="text" name="part2" maxlength="6" required class="form-control alien-input")
+        button(type="button" class="btn btn-secondary check-button" data-part="2") Check
+        span#part2-status
+      div.form-group
+        label(for='part3') Blended Alien Brew
+        input(type="text" name="part3" maxlength="6" required class="form-control alien-input")
+        button(type="button" class="btn btn-secondary check-button" data-part="3") Check
+        span#part3-status
+      div#error-message(class="text-danger mt-3")
+    script(src='/script.js')
